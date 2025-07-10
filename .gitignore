@@ -1,3 +1,9 @@
 .env
 venv/
 __pycache__/
+
+# Used for building the lookup list
+ncert_index_builder.ipynb
+ncert_index_cleaned.json
+ncert_index_partial.json
+ncert_index.json
