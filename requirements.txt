@@ -1,9 +1,11 @@
 fastapi
-yt_dlp
-requests
-PyMuPDF
-sentence-transformers
-python-dotenv
-langchain
 uvicorn
+yt_dlp
+langchain
+langdetect
+PyMuPDF
+python-dotenv
 qdrant_client
+sentence-transformers
+langchain_groq
+langchain_qdrant

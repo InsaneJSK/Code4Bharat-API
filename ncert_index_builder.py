@@ -3,7 +3,6 @@ from bs4 import BeautifulSoup
 from tqdm import tqdm
 import time
 import json
-import os
 
 BASE_URL = "https://www.ncertpdf.com"
 HEADERS = {

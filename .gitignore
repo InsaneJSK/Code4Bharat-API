@@ -7,3 +7,5 @@ ncert_index_builder.ipynb
 ncert_index_cleaned.json
 ncert_index_partial.json
 ncert_index.json
+chapters_per_subject.json
+subjects_per_class.json
