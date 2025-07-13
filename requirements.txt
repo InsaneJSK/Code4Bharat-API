@@ -1,6 +1,6 @@
 fastapi
 uvicorn
-yt_dlp
+google-api-python-client
 langchain
 langdetect
 PyMuPDF

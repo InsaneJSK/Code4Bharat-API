@@ -5,6 +5,7 @@ from chapter_upserter import upsert_chapter_text
 import uvicorn
 from chat_ncert import run_chatbot
 from pydantic import BaseModel
+from chat_title import chat_title
 
 class ChatRequest(BaseModel):
     messages: list[dict]
@@ -36,6 +37,13 @@ def upsert_chapter(
 @app.post("/chat-ncert")
 def chat_ncert_endpoint(payload: ChatRequest):
     return {"response": run_chatbot(payload.messages, payload.user_input)}
+
+@app.post("/chat-title")
+def chat_title_endpoint(
+    user_input: str = Query(...),
+    llm_response: str = Query(...)
+):
+    return {"title": chat_title(user_input=user_input, llm_response=llm_response)}
 
 if __name__ == "__main__":
     uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)
