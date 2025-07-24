@@ -2,10 +2,7 @@ from datetime import datetime
 from concurrent.futures import ThreadPoolExecutor
 from googleapiclient.discovery import build
 import os
-from dotenv import load_dotenv
-load_dotenv()
 
-# 📌 Replace with your actual API key or set via environment variable
 YOUTUBE_API_KEY = os.getenv("YOUTUBE_API_KEY")
 YOUTUBE_API_SERVICE_NAME = "youtube"
 YOUTUBE_API_VERSION = "v3"
@@ -75,7 +72,7 @@ def get_top_videos(query: str, limit: int = 6, top_n: int = 3):
     return sorted(results, key=lambda v: v['score'], reverse=True)[:top_n]
 
 
-# 🧪 CLI usage
+# CLI usage
 if __name__ == "__main__":
     query = input("Enter YouTube search query: ")
     results = get_top_videos(query)

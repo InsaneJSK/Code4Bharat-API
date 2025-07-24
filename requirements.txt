@@ -2,9 +2,7 @@ fastapi
 uvicorn
 google-api-python-client
 langchain
-langdetect
 PyMuPDF
-python-dotenv
 qdrant_client
 sentence-transformers
 langchain_groq

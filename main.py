@@ -5,11 +5,16 @@ from chapter_upserter import upsert_chapter_text
 import uvicorn
 from chat_ncert import run_chatbot
 from pydantic import BaseModel
+import os
 from chat_title import chat_title
+
+os.environ["TRANSFORMERS_CACHE"] = "./hf_cache"
+os.environ["HF_HOME"] = "./hf_home"
 
 class ChatRequest(BaseModel):
     messages: list[dict]
     user_input: str
+    cid: str
 
 app = FastAPI()
 
@@ -36,9 +41,9 @@ def upsert_chapter(
 
 @app.post("/chat-ncert")
 def chat_ncert_endpoint(payload: ChatRequest):
-    return {"response": run_chatbot(payload.messages, payload.user_input)}
+    return {"response": run_chatbot(payload.messages, payload.user_input, payload.cid)}
 
-@app.post("/chat-title")
+@app.get("/chat-title")
 def chat_title_endpoint(
     user_input: str = Query(...),
     llm_response: str = Query(...)
