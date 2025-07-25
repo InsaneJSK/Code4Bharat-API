@@ -1,0 +1,52 @@
+[
+    {
+        "question": "Why do we say that petroleum is a non-renewable resource?",
+        "ground_truth": "Petroleum takes millions of years to form. It is found in limited quantities and once used, it gets exhausted. It cannot be produced or replenished within a reasonable period of time. Hence, petroleum is called non-renewable resource.",
+        "cid": "class6_science_chapter 11: nature’s treasures"
+    },
+    {
+        "question": "What was the earliest civilisation of the Indian Subcontinent?",
+        "ground_truth": "The earliest Civilisation of the Indian Subcontinent was the Indus Valley Civilisation. It flourished in the northwestern regions of the Indian Subcontinent, particularly in areas that are now parts of Pakistan and northwest India. This Civilisation is known for its well-planned cities, advanced drainage systems, and impressive architecture, including the cities of Harappa and Mohenjo-Daro. The people of the Indus Valley Civilisation engaged in trade, had a system of writing, and developed various crafts and technologies. It was one of the world’s earliest urban cultures.",
+        "cid": "class6_social science_chapter 6: the beginnings of indian civilization"
+    },
+    {
+        "question": "What is the function of digestive enzymes?",
+        "ground_truth": "The food we eat is complex in nature, i.e., it contains complex molecules. Digestive enzymes break down these complex molecules into smaller simpler molecules so that they can be absorbed by the walls of the intestine.",
+        "cid": "class10_science_chapter 5: life processes"
+    },
+    {
+        "question": "Explain the meaning of malleable and ductile",
+        "ground_truth": "Malleable is being able to be beaten/hammered into thin sheets. Ductile is being able to be drawn into thin wires.",
+        "cid": "class10_science_chapter 3: metals and non-metals"
+    },
+    {
+        "question": "How does money solve the problem of double coincidence of wants?",
+        "ground_truth": "In a barter system where goods are directly exchanged without the use of money, double coincidence of wants is an essential feature. By serving as a medium of exchanges, money removes the need for double coincidence of wants and the difficulties associated with the barter system.",
+        "cid": "class10_economics_chapter 3: money and credit"
+    },
+    {
+        "question": "What would happen to the life of a cell if there was no Golgi apparatus?",
+        "ground_truth": "Golgi apparatus has the function of storage, modification and packaging of the products in vesicles. If there were no Golgi bodies, packaging and dispatching of materials synthesised by the cell will be stocked.",
+        "cid": "class9_science_chapter 5: the fundamental unit of life"
+    },
+    {
+        "question": "What do you understand by 'people as a resource'?",
+        "ground_truth": "People as Resource’ is a way of referring to a country's working people in terms of their existing productive skills and abilities. Human resource is an asset for the economy rather than a liability. Population becomes human capital when there is investment made in the form of education, training and medical care. In fact, human capital is the stock of skill and productive knowledge embodied in them.",
+        "cid": "class9_economics_chapter 2: people as resource"
+    },
+    {
+        "question": "What is an adiabatic process?",
+        "ground_truth": "The process in which no exchange of heat takes place between the system and the surroundings",
+        "cid": "class11_chemistry part-1_chapter 5: thermodynamics"
+    },
+    {
+        "question": "What is the basic accounting equation?",
+        "ground_truth": "The basic accounting equation is, \n Assets = Liabilities + Capital \n It means that all the monetary value of all assets of a firm are equal to the total claims, viz. owners and outsiders.",
+        "cid": "class11_accountancy-1_chapter 2: theory base of accounting"
+    },
+    {
+        "question": "State Henry's law",
+        "ground_truth": "The solubility of a gas in a liquid at a particular temperature is directly proportional to the pressure of the gas in equilibrium with the liquid at that temperature is called Henry's Law",
+        "cid": "class12_chemistry part 1_chapter 1: solutions"
+    }
+]

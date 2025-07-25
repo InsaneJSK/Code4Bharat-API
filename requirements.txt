@@ -7,3 +7,5 @@ qdrant_client
 sentence-transformers
 langchain_groq
 langchain_qdrant
+ragas
+langchain_huggingface

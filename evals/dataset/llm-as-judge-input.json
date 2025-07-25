@@ -1,0 +1,27 @@
+[
+    {
+        "question": "What made the peddler accept Edla Willmansson's invitation?",
+        "ground_truth": "Miss Edla Willmansson looked at the peddler quite compassionately. She noticed that the man was afraid. She assured him that he would be allowed to leave just as freely as he came. She requested him to stay with them over Christmas Eve. Her friendly manner made the peddler feel confidence in her and accept her invitation.",
+        "cid": "class12_english - flamingo_chapter 4: the rattrap"
+    },
+    {
+        "question": "How did Franz's feelings about M. Hamel and school change?",
+        "ground_truth": "Franz came to know that it was the last lesson in French that M. Hamel would give them. From the next day they will be taught only German. Then he felt sorry for not learning his lessons properly. His books, which seemed a nuisance and a burden earlier were now old friends. His feelings about M. Hamel also changed. He forgot all about his ruler and how cranky he was.",
+        "cid": "class12_english - flamingo_chapter 1: the last lesson"
+    },
+    {
+        "question": "Do you think that the third level was a medium of escape for Charley? Why?",
+        "ground_truth": "Yes, I think that the third level was a medium of escape for Charley. The third level is an escape for Charley from the modern setting of worry and insecurity. It is an escape from the unhappy contemporary world that is full of insecurity, fear, war, and worry. He had always desired to live his life peacefully as he did in Galesburg. Charlie was so upset and frustrated with modern life and the way of living that he wanted to move back into the past. Thus, in his mind, he has forever wanted to go back in time, so he found the third level as a realization of his dream.",
+        "cid": "class12_english - vistas_chapter 1: the third level"
+    },
+    {
+        "question": "Who is Mr Lamb? How does Derry get into his garden?",
+        "ground_truth": " Mr Lamb is an old man with a tin leg. His real leg was blown off years ago during the war. He lives all alone in his house. There is a garden near the house. It has ripe crab apples looking orange and golden in colour. Mr Lamb is sitting in his garden when Derry climbs over the garden wall to get into his garden. Though the gate is open, the boy does not use it.",
+        "cid": "class12_english - vistas_chapter 5: on the face of it"
+    },
+    {
+        "question": "How did Mourad manage to keep his 'deed' a 'secret'?",
+        "ground_truth": "Mourad would enjoy the joy-rides on the wonderful white horse only during the early morning hours. As soon as the day breaks, he would hide the horse in a deserted bam. There were some oats and dry alfalfa to satisfy the hunger of the horse.",
+        "cid": "class11_english - snapshots_chapter 1: the summer of the beautiful white horse"
+    }
+]
