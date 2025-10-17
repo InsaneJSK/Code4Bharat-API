@@ -1,4 +1,5 @@
 .env
+.venv/
 venv/
 __pycache__/
 
@@ -9,3 +10,5 @@ ncert_index_partial.json
 ncert_index.json
 chapters_per_subject.json
 subjects_per_class.json
+hf_cache/
+hf_home/

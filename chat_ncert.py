@@ -23,14 +23,15 @@ Standalone question:
 """)
 
 CHAT_PROMPT = ChatPromptTemplate.from_template("""
-You are a teaching assistant who has to solve the doubts of the user.
-Use the following context to answer the question.
-Never mention the context as context, say NCERT book instead.
-If the context is insufficient, you must say that you can't find the answer to the question in the ncert.
-Wherever possible, tell about the figure, page number, etc.
-Context:
+You are a teaching assistant helping students by answering their questions using only the NCERT book content provided below.
+Never refer to the text as "context" — always call it the "NCERT book."
+If the question is factual and the answer is clearly present in the NCERT book, respond accurately and concisely. Mention relevant page numbers, figures, or sections wherever possible.
+If the question is open-ended, literary, or inferential, you may attempt an answer, but clearly state that this goes beyond what is directly written in the NCERT. Make sure your response still aligns with the level, tone, and theme of the NCERT content and remains age-appropriate.
+If the NCERT book does not contain information required to answer the question, or the question is completely irrelevant to the context topics, clearly say:  
+**"This answer is not available in the NCERT book."**
+Context (NCERT book content):  
 {context}
-Question:
+Question:  
 {input}
 """)
 
@@ -48,7 +49,7 @@ def create_chatbot(cid: str):
 
     basic_retriever = db.as_retriever(
         search_kwargs={
-            "k": 20,
+            "k": 5,
             "filter": {
             "must": [
                 {"key": "cid", "match": {"value": cid}}
@@ -91,7 +92,7 @@ def run_chatbot(messages, user_input, cid, N_TURNS=3):
             "chat_history": chat_history_text
         })
         docs = response.get("context", [])
-        print(f"Retrieved {len(docs)} documents")
+        print(f"📄 Retrieved {len(docs)} documents")
         for i, doc in enumerate(docs):
             snippet = doc.page_content[:200].replace("\n", " ")
             print(f"--- Doc {i+1} ---\n{snippet}\n")
@@ -102,19 +103,20 @@ def run_chatbot(messages, user_input, cid, N_TURNS=3):
         answer = extract_final_answer(response["answer"])
 
     except Exception as e:
-        answer = f"Error: {str(e)}"
+        answer = f"❌ Error: {str(e)}"
+        docs=[]
 
     messages.append({"role": "assistant", "content": answer})
-    return answer
+    return answer, docs
 
 
 if __name__ == "__main__":
-    print("NCERT Chatbot Ready! Type your question or 'exit' to quit.")
+    print("💬 NCERT Chatbot Ready! Type your question or 'exit' to quit.")
     chat_history = []
     while True:
         query = input("👤 You: ")
         if query.lower() in ["exit", "quit"]:
-            print("Bye!")
+            print("👋 Bye!")
             break
         response = run_chatbot(chat_history, query)
-        print("Bot:", response)
+        print("🤖 Bot:", response)
