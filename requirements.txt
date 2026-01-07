@@ -8,3 +8,4 @@ qdrant_client
 sentence-transformers
 langchain_groq
 langchain_qdrant
+langchain-text-splitters

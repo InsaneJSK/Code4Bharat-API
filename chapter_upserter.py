@@ -1,6 +1,6 @@
 from ncert_parser import find_pdf_url, extract_text_from_pdf_url
 from qdrant_utils import ensure_collection, chapter_exists, insert_vectors, chapter_id
-from langchain.text_splitter import RecursiveCharacterTextSplitter
+from langchain_text_splitters import RecursiveCharacterTextSplitter
 from embedder import LocalMiniLMEmbedder
 from langdetect import detect
 
